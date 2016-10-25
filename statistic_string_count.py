@@ -1,0 +1,2 @@
+
+#!/usr/bin/python#encoding: utf-8#文件名：projet1import strings = raw_input('input a string:\n')letters = 0space = 0digit = 0others = 0for c in s:    if c.isalpha():        letters += 1    elif c.isspace():        space += 1    elif c.isdigit():        digit += 1    else:        others += 1print 'char = %d,space = %d,digit = %d,others = %d' % (letters,space,digit,others)Tn = 0Sn = []n = int(raw_input('n = :\n'))a = int(raw_input('a = :\n'))for count in range(n):    Tn = Tn + a    a = a * 10    Sn.append(Tn)    print TnSn = reduce(lambda x,y : x + y,Sn)print Sn
